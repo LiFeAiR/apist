@@ -183,7 +183,7 @@ class ApistMethod
 	public function setContent($content)
 	{
 		$this->content = $content;
-		$this->crawler->addContent($content);
+		$this->crawler->addHTMLContent($content, 'UTF-8');
 		return $this;
 	}
 
